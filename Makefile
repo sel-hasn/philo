@@ -6,7 +6,7 @@
 #    By: sel-hasn <sel-hasn@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/04 13:09:07 by sel-hasn          #+#    #+#              #
-#    Updated: 2024/05/22 16:52:58 by sel-hasn         ###   ########.fr        #
+#    Updated: 2024/05/30 12:21:23 by sel-hasn         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ FLAGS = -Wall -Wextra -Werror #-g -fsanitize=thread
 $(NAME): $(OBJ)
 	$(CC) $(FLAGS) -o $(NAME) $(OBJ)
 
-%.o: %.c philosophers.h
+%.o: %.c philo.h
 	$(CC) $(FLAGS) -c $< -o $@
 
 all: $(NAME)
